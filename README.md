@@ -1,6 +1,6 @@
 This is Flutter package that helps to measure bounds of text on canvas.
 
-## Prerequisites For Use
+## Prerequisites for use
 
 Sometimes it's needed to get the bounds of the text on canvas without horizontal
 and vertical extents provided by ```TextPainter``` because of concrete
