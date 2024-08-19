@@ -1,7 +1,7 @@
 name: measure_text
-description: "Library for text bounds measuring."
+description: "Library to measure text bounds on canvas."
 version: 0.0.1
-homepage:
+homepage: https://github.com/AlphaOmega11/flutter_measure_text
 
 environment:
   sdk: '>=3.4.1 <4.0.0'
