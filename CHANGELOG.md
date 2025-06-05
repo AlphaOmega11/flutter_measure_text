@@ -5,3 +5,7 @@
 ## 0.0.2
 
 * Fix measuring process in async environment.
+
+## 0.0.3
+
+* Fix critical measuring bug.
