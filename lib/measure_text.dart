@@ -23,7 +23,7 @@ class TextMeasurer {
     canvas.drawColor(const Color.fromARGB(0, 0, 0, 0), BlendMode.color);
     measurePainter.paint(canvas, Offset.zero);
     final picture = pictureRecorder.endRecording();
-    final image = picture.toImageSync(
+    final image = await picture.toImage(
         (measurePainter.width * _textMeasuringScaleFactor).toInt(),
         (measurePainter.height * _textMeasuringScaleFactor).toInt());
     final byteData = await image.toByteData();
