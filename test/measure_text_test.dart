@@ -32,7 +32,7 @@ void main() {
 
     //Calculating text bounds and checking the result
     final textBounds = await TextMeasurer.measureText(_measurePainter);
-    expect(_areRectsEqual(textBounds, const Rect.fromLTRB(1.2, 3.0, 5.0, 13.0)),
+    expect(_areRectanglesEqual(textBounds, const Rect.fromLTRB(1.2, 3.0, 5.0, 13.0)),
         true);
   });
 
@@ -48,13 +48,13 @@ void main() {
 
     //Calculating text bounds and checking the result
     final textBounds = await TextMeasurer.measureText(_measurePainter);
-    expect(_areRectsEqual(textBounds, const Rect.fromLTRB(0.6, 3.0, 7.3, 29.0)),
+    expect(_areRectanglesEqual(textBounds, const Rect.fromLTRB(0.6, 3.0, 7.3, 29.0)),
         true);
   });
 }
 
 //Comparing rectangles
-bool _areRectsEqual(Rect rect1, Rect rect2) {
+bool _areRectanglesEqual(Rect rect1, Rect rect2) {
   const compareThreshold = 0.1;
   return (rect1.left - rect2.left).abs() < compareThreshold &&
       (rect1.top - rect2.top).abs() < compareThreshold &&
