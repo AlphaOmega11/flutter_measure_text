@@ -31,7 +31,7 @@ void main() {
     _measurePainter.layout();
 
     //Calculating text bounds and checking the result
-    final textBounds = await TextMeasurer.measureText(_measurePainter);
+    final textBounds = await TextMeasurer.measureText(_measurePainter, measureTextureSize: 2048);
     expect(_areRectanglesEqual(textBounds, const Rect.fromLTRB(1.2, 3.0, 5.0, 13.0)),
         true);
   });

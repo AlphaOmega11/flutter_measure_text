@@ -9,3 +9,7 @@
 ## 0.0.3
 
 * Fix critical measuring bug.
+
+## 0.0.4
+
+* Fix critical measuring bug.

@@ -42,7 +42,7 @@ TextPainter(text: text, textDirection: TextDirection.ltr);
 measurePainter.layout();
 
 //Calculating text bounds
-final textBounds = await TextMeasurer.measureText(measurePainter);
+final textBounds = await TextMeasurer.measureText(measurePainter, measureTextureSize: 1024);
 ```
 
 ## Additional information
